@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+@import url(https://fonts.googleapis.com/css?family=Coda);
+body {
+  padding-top: 60px;
+  font-family: Orbitron;
+  background-image: url(http://rpgvienna.com/fcc/quote-generator/images/bg.jpg);
+  background-size: cover;
+  background-repeat: vertical;
+  background-position: 50% 50%;
+}
+.jumbotron {
+  font-family: Orbitron;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.portrait {
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  border: 15px solid green;
+}
+.logo {
+  margin: 0 auto;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+#quotetext {
+  font-family: Coda;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 170px;
+  font-size: 20px;
+  overflow: hidden;
+  /* <-- adjust this */
+}
+.arrow_box {
+  position: relative;
+  background: #FFF;
+  border: 4px solid #000;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.arrow_box:after, .arrow_box:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow_box:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #FFF;
+  border-width: 30px;
+  margin-top: -30px;
+}
+.arrow_box:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-left-color: #000;
+  border-width: 36px;
+  margin-top: -36px;
+}
+.arrow_box_mobile {
+  position: relative;
+  background: #FFF;
+  border: 4px solid #000;
+  margin-bottom: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.arrow_box_mobile:after, .arrow_box_mobile:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow_box_mobile:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #FFF;
+  border-width: 30px;
+  margin-left: -30px;
+}
+.arrow_box_mobile:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #000;
+  border-width: 36px;
+  margin-left: -36px;
+}
